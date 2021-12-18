@@ -1,0 +1,98 @@
+.settings {
+  padding: 5px;
+  background-color: aquamarine;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.settings h1 {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+/* only visible on big screens in landscape, see below */
+.rules {
+  display: none;
+  /* padding: 5px; */
+}
+
+.rules h3 {
+  text-align: center;
+}
+
+/* the .rules only become visible in landscape and the hight is more than 700px */
+@media only screen and (orientation: landscape) and (min-height: 700px)  {
+  .rules {
+    display: unset;
+  }
+}
+
+.buttons {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.controls>div {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.controls span {
+  font-weight: bold;
+}
+
+.buttons button {
+  align-items: center;
+  appearance: none;
+  background-color: #3EB2FD;
+  background-image: linear-gradient(1deg, #4F58FD, #149BF3 99%);
+  background-size: calc(100% + 20px) calc(100% + 20px);
+  border-radius: 100px;
+  border-width: 0;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: CircularStd,sans-serif;
+  font-size: 1rem;
+  height: auto;
+  justify-content: center;
+  line-height: 1.5;
+  padding: 6px 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color .2s,background-position .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.buttons button:active,
+.buttons button:focus {
+  outline: none;
+}
+
+.buttons button:hover {
+  background-position: -20px -20px;
+}
+
+.button21:focus:not(:active) {
+  box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 .125em;
+}

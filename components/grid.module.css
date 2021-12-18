@@ -1,0 +1,16 @@
+.grid {
+  width: 100vh;
+  height: 100vh;
+  background-color: black;
+  border: 1px solid black;
+  display: grid;
+  /* grid-template-columns: repeat(4, 1fr); */
+  grid-gap: 1px;
+}
+
+@media only screen and (orientation: portrait) {
+  .grid {
+    width: 100vw;
+    height: 100vw
+  }
+}
