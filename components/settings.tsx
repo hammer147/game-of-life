@@ -88,7 +88,6 @@ const Settings = (props: Props) => {
         </div>
       </div>
 
-
     </div>
 
   )

@@ -16,7 +16,6 @@
 /* only visible on big screens in landscape, see below */
 .rules {
   display: none;
-  /* padding: 5px; */
 }
 
 .rules h3 {
