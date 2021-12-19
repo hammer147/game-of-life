@@ -39,7 +39,7 @@ const Settings = (props: Props) => {
 
   return (
     <div className={styles.settings}>
-      <h1>Conway's Game Of Life</h1>
+      <h1>Conway&apos;s Game Of Life</h1>
 
       <div className={styles.rules}>
         <h3>Rules</h3>
